@@ -1,0 +1,29 @@
+using System;
+namespace DieRoller
+{
+  class MainClass
+  {
+  public static void Main (string[] args)
+  {
+  
+  char Roll = 'R';
+  do {
+  
+  Random x = new Random ();
+  
+  int die01 = x.Next (1, 7);
+  Console.WriteLine ("The first die rolls"+ die01);
+  
+  int die02 = x.Next (1, 7);
+  console.Writeline ("The second die rolls"+ die02);
+  
+  console.WriteLine ("you rolled" die01+die02));
+  
+  Console.WriteLine ("Press R to Reroll");
+  Roll = Convert.ToChar (Console.Readline());
+  Roll = Char.ToUpper (Roll);
+  
+    } while (Roll == 'R');
+  } 
+  }
+}
